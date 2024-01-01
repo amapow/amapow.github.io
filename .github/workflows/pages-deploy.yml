@@ -83,6 +83,7 @@ jobs:
 
       - name: Test site
         run: |
+          gem install html-proofer
           bundle exec htmlproofer _site --disable-external --check-html --allow_hash_href
 
       - name: Upload site artifact
