@@ -75,7 +75,7 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
       fmtags += "]";
     }
     if (cats.length > 0) {
-      fmcats += "\ncategories: [";
+      fmcats += "\ncategory: [";
       for (const t of cats) {
         fmcats += t + ", ";
       }
